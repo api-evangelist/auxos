@@ -1,7 +1,30 @@
 aid: auxos
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/auxos.png
 name: Auxos
-description: Auxos is a company surfaced as a portfolio company of y-combinator and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Auxos is an AI-powered customer research platform that builds 1:1 AI clones of
+  a company's real customers to simulate how they respond to business decisions
+  before those decisions ship. The company recruits and interviews real people
+  matching a client's ideal customer profile, then models each participant as an
+  always-on AI avatar grounded in that interview data. Teams use the resulting
+  synthetic audience to test surveys, messaging, ad creative, pricing, and
+  product flows and retrieve population-scale quantitative results plus
+  qualitative commentary in minutes rather than the weeks traditional market
+  research takes. Auxos is a Y Combinator (Spring 2026) company founded by Ashton
+  Daniel, Jerry Wu, and Kerry Lu, targeting marketing, product, and research
+  teams. This profile is maintained by API Evangelist; as of enrichment Auxos
+  publishes no public developer or API surface.
 url: https://raw.githubusercontent.com/api-evangelist/auxos/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +32,36 @@ x-backed-by:
 - y-combinator
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-yc-batch: Spring 2026
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Market Research
+- Customer Research
+- Artificial Intelligence
+- Consumer Insights
+- Simulation
+- Synthetic Data
+- Y Combinator
 apis: []
+common:
+- type: DomainSecurity
+  url: security/auxos-domain-security.yml
+- type: Website
+  url: https://www.useauxos.com
+- type: Login
+  url: https://www.useauxos.com/signin
+- type: LinkedIn
+  url: https://www.linkedin.com/company/auxos
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
